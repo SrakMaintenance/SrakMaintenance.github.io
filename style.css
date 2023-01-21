@@ -2,10 +2,20 @@ html{
     scroll-behavior: smooth;
 }
 
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper{ /* Background photo*/
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(MainPhoto.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -16,6 +26,8 @@ html{
     overflow: hidden;
     position:fixed;
     top:0%;
+
+    
 }
 
 .logo{ /* Logo */
@@ -51,11 +63,14 @@ html{
     border-radius: 25px;
 }
 
-.wrapper .center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.center{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     font-family: sans-serif;
     user-select: none;
 }
@@ -77,10 +92,12 @@ html{
 
 .center h3{
     color: white;
-    font-size:40px;
+    font-size:30px;
     font-weight: bold;
-    width: 1000px;
     text-align: center;
+    height: 40px;
+    width: 100%;
+    line-height:1;
 }
 
 .center .button{
@@ -146,7 +163,7 @@ html{
     background: white;
 }
 
-.boxItem{
+/* .boxItem{
     background: white;
     height: 80%;
     width: 40%;
@@ -158,6 +175,30 @@ html{
     text-align: center;
     align-items: center;
     vertical-align: middle;
-    color: rgb(20, 139, 20);;
+    color: rgb(20, 139, 20);
     font-family: sans-serif;
+} */
+footer{
+    background-color: #9ab39f;
+}
+footer .logoFooter{
+    padding: 10px;
+    padding-top: 30px;
+    width: 120px;
+    height: auto;
+}
+
+footer h1{
+    font-family: sans-serif;
+    color: grey;
+    font-size: 20px;
+}
+
+
+.sections h1{
+    height: 90%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
